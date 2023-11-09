@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&family=Roboto:wght@400;700;900&display=swap');
+:root{
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Dark-Slate-Grey);
+    font-family: Roboto;
+    color: var(--black);
+    font-size: 16px;
+}
+.container{
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+    background: var(--White);
+    margin-bottom: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+.sign{
+    flex: 1;
+    width: 500px;
+    margin: 60px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.p1{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.tick{
+    width: 18px;
+    padding-right: 5px;
+}
+.p2{
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.image{
+    flex: 1;
+    width: 200px;
+}
+.image img{
+    margin: 20px 0 20px -100px;
+    width: 500px;
+    height: 460px;
+}
+.points{
+    padding-bottom: 30px;
+}
+.label{
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+#mail-validation{
+    float: right;
+    color: var(--Tomato);
+    display: none;
+}
+input{
+    outline: none;
+    width: 100%;
+    height: 50px;
+    border: 2px var(--Grey) solid;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+input::placeholder{
+    font-size: 18px;
+}
+.email{
+    padding-bottom: 20px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    color: var(--White);
+    background: var(--Charcoal-Grey);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(to right, hsl(343, 95%, 65%), var(--Tomato));
+}
+/* Sucess- Message*/
+#sucess-banner{
+    width: 25%;
+    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: var(--White);
+    display: none;
+}
+.main-2{
+    padding: 40px;
+}
+
+.sucess-img img{
+    width: 50px;
+    padding-bottom: 10px;
+}
+.sucess-h1{
+    font-size: 40px;
+}
+.sucess-p{
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+/*Footer*/
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     color: var(--White);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/*Desktop*/
+@media (max-width: 1440px) {
+    .container{
+        width: 55%;
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 50%;
+        border-radius: 0 ;
+        margin-top: 0;
+    }
+    .main{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .sign{
+        flex: 1;
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        margin-top: -12%;
+    }
+    .image{
+        flex: 1;
+        height: 200px;
+    }
+    .image img{
+        content: url("./assets/images/illustration-sign-up-mobile.svg");
+        width: 188%;
+        padding: 0;
+        margin: 0;
+        margin-top: -60%;
+    }
+    input{
+        width: 90%;
+    }
+    button{
+        width: 90%;
+    }
+    #mail-validation{
+        float: right;
+        margin-right: 10%;
+    }
+    .email{
+        padding-left: 5px;
+    }
+    #sucess-banner{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 0;
+        background: var(--White);
+        display: none;
+    }
+    .main-2{
+        padding: 100px 30px;
+    }
+    .sucess-p{
+        font-size: 16px;
+        padding-bottom: 120px;
+    }
+    span{
+        font-weight: 700;
+    }
+    .sucess-img{
+        padding-bottom: 20px;
+    }
+    .sucess-h1{
+        padding-bottom: 20px;
+    }
+    .sucess-btn button{
+        width: 100%;
+    }
+}
