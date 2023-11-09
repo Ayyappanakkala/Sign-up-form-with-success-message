@@ -18,7 +18,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ## Overview
 
-You can see a live demo of this project [here](https://your-live-demo-url.com).
+You can see a live demo of this project [here](https://ayyappanakkala.github.io/Sign-up-form-with-success-message/).
 
 ### The challenge
 
@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Ayyappanakkala/Sign-up-form-with-success-message.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://ayyappanakkala.github.io/Sign-up-form-with-success-message/)
 
 ## My Process
 
