@@ -128,6 +128,9 @@ button:hover{
 .sucess-h1{
     font-size: 40px;
 }
+span{
+    font-weight: 700;
+}
 .sucess-p{
     font-size: 12px;
     padding-bottom: 40px;
@@ -209,9 +212,6 @@ button:hover{
     .sucess-p{
         font-size: 16px;
         padding-bottom: 120px;
-    }
-    span{
-        font-weight: 700;
     }
     .sucess-img{
         padding-bottom: 20px;
